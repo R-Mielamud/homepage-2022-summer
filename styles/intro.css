@@ -14,3 +14,7 @@
     font-size: var(--font-big);
     gap: 10px;
 }
+
+.intro-divider {
+    padding-top: 15px;
+}

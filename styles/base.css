@@ -5,8 +5,10 @@
     --color-black: #212121;
     --font-header-0: 40px;
     --font-header-1: 32px;
+    --font-header-2: 24px;
     --font-big: 16px;
     --font-normal: 14px;
+    --font-small: 12px;
 }
 
 * {
@@ -42,4 +44,25 @@ body {
 h1 {
     font-weight: 500;
     font-size: var(--font-header-1);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: var(--font-header-2);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-primary);
+}
+
+.hint {
+    font-size: var(--font-small);
 }
