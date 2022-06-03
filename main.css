@@ -1,0 +1,7 @@
+main {
+    width: 100%;
+    max-width: 800px;
+    border: 25px solid var(--color-primary);
+    box-shadow: 0 0 40px 20px var(--color-primary-shadow);
+    padding: 40px 30px;
+}
