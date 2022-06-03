@@ -4,6 +4,8 @@
     --color-white: #fafafa;
     --color-black: #212121;
     --font-header-0: 40px;
+    --font-header-1: 32px;
+    --font-big: 16px;
     --font-normal: 14px;
 }
 
@@ -34,5 +36,10 @@ body {
     gap: 30px;
     color: var(--color-white);
     background-color: var(--color-black);
-    padding: 300px 10px;
+    padding: 250px 10px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: var(--font-header-1);
 }
