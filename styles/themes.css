@@ -1,0 +1,74 @@
+.theme-switch-bg,
+.theme-switch {
+  --switch-size: 20px;
+
+  opacity: 0.6;
+}
+
+.theme-switch-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(var(--switch-size) * 4);
+  height: calc(var(--switch-size) * 2);
+  background-color: var(--color-black);
+  border-top-right-radius: var(--switch-size);
+  border-bottom-right-radius: var(--switch-size);
+}
+
+.theme-switch {
+  z-index: 2;
+  appearance: none;
+  position: fixed;
+  left: var(--switch-size);
+  margin: 0 0 30px;
+  width: calc(var(--switch-size) * 2);
+  height: calc(var(--switch-size) * 2);
+}
+
+.theme-switch::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--switch-size) / 2);
+  left: 0;
+  z-index: 0;
+  background-color: var(--color-white);
+  width: calc(var(--switch-size) * 2);
+  height: var(--switch-size);
+  border-radius: var(--switch-size);
+  box-shadow: 0 0 30px 1px var(--color-white);
+}
+
+.theme-switch::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(var(--switch-size) / 2);
+  left: 0;
+  z-index: 1;
+  background-color: var(--color-black);
+  width: var(--switch-size);
+  height: var(--switch-size);
+  border-radius: var(--switch-size);
+  transition-property: transform;
+  transition-duration: 0.1s;
+}
+
+.theme-switch:checked::after {
+  transform: translateX(var(--switch-size));
+}
+
+.theme-switch:checked,
+.theme-switch:checked ~ * {
+  --color-white: #212121;
+  --color-black: #fafafa;
+  --color-primary: #990;
+}
+
+.theme-switch-bg:hover,
+.theme-switch:hover,
+.theme-switch-bg:hover ~ .theme-switch,
+.theme-switch:hover ~ .theme-switch-bg {
+  opacity: 1;
+}
