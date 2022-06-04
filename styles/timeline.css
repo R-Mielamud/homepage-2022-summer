@@ -1,14 +1,8 @@
 .timeline {
-    padding-top: 10px;
-    list-style-type: none;
+    list-style: none;
 }
 
-.timeline li {
-    line-height: 1.4;
-    padding: 5px 0;
-}
-
-.timeline li .date {
+.timeline .date {
     color: var(--color-primary);
     font-style: italic;
     padding-right: 7px;
