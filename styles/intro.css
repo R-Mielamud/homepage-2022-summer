@@ -6,6 +6,7 @@
 .avatar {
   display: block;
   width: 250px;
+  height: min-content;
 }
 
 .intro-text {
@@ -13,4 +14,15 @@
   flex-direction: column;
   font-size: var(--font-big);
   gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .avatar {
+    align-self: center;
+  }
 }
