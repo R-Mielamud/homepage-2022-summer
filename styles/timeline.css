@@ -1,9 +1,9 @@
 .timeline {
-    list-style: none;
+  list-style: none;
 }
 
 .timeline .date {
-    color: var(--color-primary);
-    font-style: italic;
-    padding-right: 7px;
+  color: var(--color-primary);
+  font-style: italic;
+  padding-right: 7px;
 }
