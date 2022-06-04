@@ -1,4 +1,7 @@
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     width: 100%;
     max-width: 1000px;
     border: 25px solid var(--color-primary);
