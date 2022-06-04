@@ -1,0 +1,16 @@
+.intro {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    display: block;
+    width: 250px;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-big);
+    gap: 10px;
+}
