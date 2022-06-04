@@ -5,3 +5,10 @@
   grid-auto-columns: 1fr;
   gap: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .columns {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+}
